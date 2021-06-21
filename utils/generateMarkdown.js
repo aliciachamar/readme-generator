@@ -20,15 +20,28 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseLink(license) {
+  let link = "";  
+  switch (license) {
+      case "Apache 2.0": 
+        link = "https://opensource.org/licenses/Apache-2.0";
+        break;
+      case "BSD-3 Clause":
+        link = "https://opensource.org/licenses/BSD-3-Clause";
+        break;
+      case "MIT":
+        link = "https://opensource.org/licenses/MIT";
+        break;
+      case "None":
+        break;
+    }
+  return link;
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   let badge = renderLicenseBadge(data.license);
+  let link = renderLicenseLink(data.license);
   
   return `# ${data.title}
 
@@ -66,7 +79,7 @@ function generateMarkdown(data) {
 
   ## License
 
-  This project is covered under the following license: ${data.license}.
+  This project is covered under the following license: ${data.license}. Please reference the license on [opensource.org](${link}) for more information.
 
 
   ## Contributing
