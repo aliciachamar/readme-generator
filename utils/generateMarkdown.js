@@ -42,6 +42,10 @@ function renderLicenseLink(license) {
 function generateMarkdown(data) {
   let badge = renderLicenseBadge(data.license);
   let link = renderLicenseLink(data.license);
+  let linkTag = "";
+  if (link) {
+    linkTag = "Please reference the license on [opensource.org](${link}) for more information."
+  }
   
   return `# ${data.title}
 
@@ -79,7 +83,7 @@ function generateMarkdown(data) {
 
   ## License
 
-  This project is covered under the following license: ${data.license}. Please reference the license on [opensource.org](${link}) for more information.
+  This project is covered under the following license: ${data.license}. ${linkTag}
 
 
   ## Contributing
