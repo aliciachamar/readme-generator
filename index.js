@@ -70,7 +70,8 @@ function init() {
     inquirer.prompt(questions)
         .then(response => {
             const fileText = generateMarkdown(response);
-            writeToFile("readme.md", fileText);
+            const fileName = response.title + "-readme.md";
+            writeToFile(fileName, fileText);
         });
 }
 
