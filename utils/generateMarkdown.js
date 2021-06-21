@@ -21,7 +21,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  let link = "";  
+  let link = ""; 
   switch (license) {
       case "Apache 2.0": 
         link = "https://opensource.org/licenses/Apache-2.0";
