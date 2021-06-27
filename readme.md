@@ -19,6 +19,10 @@
 
   * [Questions](#questions)
 
+  * [Walkthrough](#walkthrough)
+
+  * [Screenshots](#screenshots)
+
 
   ## Installation
 
@@ -52,9 +56,13 @@
   Please [email me](aliciachamar@gmail.com) with any questions. 
 
   
+  ## Walkthrough
 
   See the walkthrough video [here](https://drive.google.com/file/d/1bUKdhvmazlrXytlPkSxDLzVloOfF3UKs/view).
 
-  ![Terminal Screenshot]()
 
-  ![Finished Readme Screenshot]()
+  ## Screenshots
+
+  ![Terminal Screenshot](https://raw.githubusercontent.com/aliciachamar/readme-generator/main/assets/images/terminal-screenshot.PNG)
+
+  ![Finished Readme Screenshot](https://raw.githubusercontent.com/aliciachamar/readme-generator/main/assets/images/finished-screenshot.PNG)
